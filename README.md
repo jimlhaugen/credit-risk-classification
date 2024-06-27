@@ -9,9 +9,9 @@ In this challenge, a dataset of historical lending activity from a peer-to-peer 
 ### Financial Information of the Data and Prediction
 After being read into a Pandas DataFrame, the original data provided in a .csv was found to comprise the following features: (1) loan_size, (2) interest_rate, (3) borrower_income, (4) debt_to_income, (5) num_of_accounts, (6) derogatory_marks, (7) total_debt, and (8) loan_status.  loan_status feature is comprised of "0" or "1" indicative of "healthy loans" or "high-risk loans," respectively. The loan_status is defined as a label and it was separated from the other features.  There are 2500 rows in which loan_status feature is "1" indicative of a high-risk loan."
 
-### Financial Information of the Data and Prediction
+### Goal of this Challenge
 
-The goal of this challenge is to evaluate the performance of a logistic regression model fitted with (1) this original data and (2) a resampled training data of this original data which will allow a user to predict whether the logistic regression model predicts and identifies loans as being either "healthy" or "high-risk" when fitted with either the original data or the resampled data. 
+The goal of this challenge is to employ the stages of the Machine Learning Process to evaluate the performance of a logistic regression model fitted with (1) this original data and (2) a resampled training data of this original data which will allow a user to predict whether the logistic regression model predicts and identifies loans as being either "healthy" or "high-risk" when fitted with either the original data or the resampled data. 
 
 ### Stages of the Machine Learning Process
 
