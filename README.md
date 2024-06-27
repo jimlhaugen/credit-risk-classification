@@ -1,13 +1,30 @@
-# Module 12 Report Template
+# Module 20 Challenge
+# Credit Risk Analysis Report
 
 ## Overview of the Analysis
 
-In this section, describe the analysis you completed for the machine learning models used in this Challenge. This might include:
+### Purpose of the Analysis 
+In this challenge, a dataset of historical lending activity from a peer-to-peer lending servics company has been provided from which to build a machine learning model that can identify the creditworthiness of borrowers. 
 
-* Explain the purpose of the analysis.
-* Explain what financial information the data was on, and what you needed to predict.
-* Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
-* Describe the stages of the machine learning process you went through as part of this analysis.
+### Financial Information of the Data and Prediction
+After being read into a Pandas DataFrame, the original data provided in a .csv was found to comprise the following features: (1) loan_size, (2) interest_rate, (3) borrower_income, (4) debt_to_income, (5) num_of_accounts, (6) derogatory_marks, (7) total_debt, and (8) loan_status.  loan_status feature is comprised of "0" or "1" indicative of "healthy loans" or "high-risk loans," respectively. The loan_status is defined as a label and it was separated from the other features.  There are 2500 rows in which loan_status feature is "1" indicative of a high-risk loan."
+
+### Financial Information of the Data and Prediction
+
+The goal of this challenge is to evaluate the performance of a logistic regression model fitted with (1) this original data and (2) a resampled training data of this original data which will allow a user to predict whether the logistic regression model predicts and identifies loans as being either "healthy" or "high-risk" when fitted with either the original data or the resampled data. 
+
+### Stages of the Machine Learning Process
+
+* Split the Data into Training and Testing Sets
+  * Read the lending_data.csv data from the Resources folder into a Pandas DataFrame.
+  * Create the labels set (y) from the “loan_status” column, and then create the features (X) DataFrame from the remaining columns.
+  * Check the balance of the labels variable (y) by using the value_counts function.
+  * Split the data into training and testing datasets by using train_test_split.
+  ** 
+  * Recall: 99% for "healthy loans"; 91% for "high-risk loans"
+
+
+
 * Briefly touch on any methods you used (e.g., `LogisticRegression`, or any resampling method).
 
 ## Results (Scores)
