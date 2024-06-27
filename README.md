@@ -4,7 +4,7 @@
 ## Overview of the Analysis
 
 ### Purpose of the Analysis 
-In this challenge, a dataset of historical lending activity from a peer-to-peer lending servics company has been provided from which to build a machine learning model that can identify the creditworthiness of borrowers. 
+In this challenge, a dataset of historical lending activity from a peer-to-peer lending services company has been provided from which to build a machine learning model that can identify the creditworthiness of borrowers. 
 
 ### Financial Information of the Data and Prediction
 After being read into a Pandas DataFrame, the original data provided in a .csv was found to comprise the following features: (1) loan_size, (2) interest_rate, (3) borrower_income, (4) debt_to_income, (5) num_of_accounts, (6) derogatory_marks, (7) total_debt, and (8) loan_status.  loan_status feature is comprised of "0" or "1" indicative of "healthy loans" or "high-risk loans," respectively. The loan_status is defined as a label and it was separated from the other features.  There are 2500 rows in which loan_status feature is "1" indicative of a high-risk loan."
@@ -19,19 +19,19 @@ The goal of this challenge is to evaluate the performance of a logistic regressi
   * Read the lending_data.csv data from the Resources folder into a Pandas DataFrame.
   * Create the labels set (y) from the “loan_status” column, and then create the features (X) DataFrame from the remaining columns.
   * Check the balance of the labels variable (y) by using the value_counts function.
-  * Split the data into training and testing datasets by employing train_test_split imported from sklearn.model_selection.
+  * Split the data into training and testing datasets by employing the train_test_split module imported from sklearn.model_selection.
 
 * Create a Logistic Regression Model with the Original Data
-  * Fit a logistic regression model by using the training data (X_train and y_train) by employing LogisticRegression imported from sklearn.linear_model.
+  * Fit a logistic regression model by using the training data (X_train and y_train) by employing the LogisticRegression module imported from sklearn.linear_model.
   * Save the predictions on the testing data labels by using the testing feature data (X_test) and the fitted model.
-  * Evaluate the model’s performance with (1) balanced accuracy, (2) a confusion matrix, and (3) a classification report, where balanced_accuracy_score, confusion_matrix, and classification_report have been imported from sklearn.metrics.
-  * Determine how well does the logistic regression model predicted both the 0 (healthy loan) and 1 (high-risk loan) labels as a function of (1) a balanced accuracy score, (2) precision scores, (3) recall scores, and f1-scores.
+  * Evaluate the model’s performance with (1) balanced accuracy, (2) a confusion matrix, and (3) a classification report, where the balanced_accuracy_score, confusion_matrix, and classification_report modules have been imported from sklearn.metrics.
+  * Discuss how well the logistic regression model predicted both the 0 (healthy loan) and 1 (high-risk loan) labels as a function of (1) a balanced accuracy score, (2) precision scores, (3) recall scores, and f1-scores.
 
 * Predict a Logistic Regression Model with Resampled Training Data
   * Use the RandomOverSampler module from the imbalanced-learn library to resample the data. It was confirmed that the labels had an equal number of data points.
   * Use the LogisticRegression classifier and the resampled data to fit the model and make predictions.
-  * Evaluate the model’s performance with (1) balanced accuracy, (2) a confusion matrix, and (3) a classification report, where balanced_accuracy_score, confusion_matrix, and classification_report have been imported from sklearn.metrics.
-  * Determine how well does the logistic regression model -- with the oversampled data -- predicted both the 0 (healthy loan) and 1 (high-risk loan) labels as a function of (1) a balanced accuracy score, (2) precision scores, (3) recall scores, and f1-scores.
+  * Evaluate the model’s performance with (1) balanced accuracy, (2) a confusion matrix, and (3) a classification report from  the modules imported above
+  * Discuss how well the logistic regression model -- fitted with the oversampled data -- predicted both the 0 (healthy loan) and 1 (high-risk loan) labels as a function of (1) a balanced accuracy score, (2) precision scores, (3) recall scores, and f1-scores.
 
 
 ## Results (Scores)
